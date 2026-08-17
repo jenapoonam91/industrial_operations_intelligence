@@ -15,6 +15,14 @@ import {
 const STYLE = `
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
+html, body, #root{
+  margin:0;
+  padding:0;
+  width:100%;
+  max-width:none;
+  height:100%;
+}
+
 :root{
   --bg:#EEF1F4;
   --surface:#FFFFFF;
@@ -39,7 +47,8 @@ const STYLE = `
   font-family:'Inter',sans-serif;
   color:var(--text);
   background:var(--bg);
-  width:100%;
+  width:100vw;
+  max-width:100%;
   min-height:100vh;
   display:flex;
   font-size:14px;
